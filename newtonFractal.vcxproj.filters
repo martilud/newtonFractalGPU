@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="common\lodepng.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common\arrrgh.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\lodepng.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="newtonFractal.cuh" />
+    <ClInclude Include="utilities\cuda_error_helper.hpp" />
+    <ClInclude Include="structs.h" />
+    <ClInclude Include="cuComplex.cu" />
+    <ClInclude Include="gpurasteriser.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{1a88d3c0-d1b9-4776-8aa5-579a2555392c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="newtonFractal.cu" />
+  </ItemGroup>
+</Project>
